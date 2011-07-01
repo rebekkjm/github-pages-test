@@ -1,0 +1,32 @@
+<h3>Register here to find a studygroup</h3>
+
+<form action="/list/" method="post">{% csrf_token %}
+    <table>
+        {{ entry.as_table}}
+    </table>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+<!--
+<table>
+    <form name="add_student" action="/list/" method="post">{% csrf_token %}
+        <tr>
+            <td>Name:</td> <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Subject:</td> <td><input type="text" name="subject" /><br /></td>
+        </tr>
+        <tr>
+            <td>Email:</td> <td><input type="text" name="email" /><br /></td>
+        </tr>
+        <tr>
+            <td>Level:</td> <td><input type="text" name="level" /><br /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </form>
+</table>
+-->
+
+
